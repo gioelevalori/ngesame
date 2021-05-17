@@ -1,0 +1,17 @@
+
+
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>titolo</mat-label>
+    <input #titolo matInput placeholder="" value="{{post?.titolo}}">
+  </mat-form-field>
+<br>
+  <mat-form-field class="example-full-width">
+    <mat-label>testo</mat-label>
+    <textarea #testo matInput placeholder="" value="{{post?.testo}}"></textarea>
+  </mat-form-field>
+  <br>
+  <button mat-button routerLink="/list" >Indietro</button>
+  <button mat-button type="button" (click)="update(titolo.value, testo.value)">Salva</button>
+
+</form>

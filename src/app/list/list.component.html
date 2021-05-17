@@ -1,0 +1,22 @@
+<h1>Api vere</h1>
+<ul class="heroes">
+  <li *ngFor="let post of posts" routerLink="/detail/{{post.id}}">
+    <a>
+  <span class="badge">{{post.id}}</span> {{post.titolo}}
+    </a>
+  </li>
+</ul>
+
+<h1>Api finte</h1>
+<ul>
+  <li> {{api?.titolo}}</li>
+</ul>
+
+
+
+
+
+
+
+
+
